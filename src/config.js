@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const CONTRACT_NAME = process.env.CONTRACT_NAME ||'nearvote.nosugar.testnet'
+=======
+const CONTRACT_NAME = process.env.CONTRACT_NAME ||'blockvote.nosugar.testnet'
+>>>>>>> 23546e3ae897db30e88f3b5f454c9bcd3c28ff35
 
 function getConfig(env) {
   switch (env) {

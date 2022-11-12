@@ -28,6 +28,7 @@ export async function initContract() {
       // View methods are read only. They don't modify the state, but usually return some value.
 
       viewMethods: [
+<<<<<<< HEAD
         "getAlltopic",
         "getCandidateList",
         "getEventScore",
@@ -43,6 +44,25 @@ export async function initContract() {
         "eventEnd",
         "clearTopicArray",
         "addNum"
+=======
+        "didVoted",
+        "getAlltopic",
+        "getScore",
+        "test",
+        "getCandidateScore",
+        "getCandidateList",
+        "getEventCretor",
+        "getUserVotedList",
+        "getAlltopicList",
+      ],
+      // Change methods can modify the state. But you don't receive the returned value when called.
+      changeMethods: [
+        "addCandidate",
+        "addToTopicArray",
+        "addVote",
+        "userVoted",
+        "clearTopicArray",
+>>>>>>> 23546e3ae897db30e88f3b5f454c9bcd3c28ff35
       ],
     }
   );

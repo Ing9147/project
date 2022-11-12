@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "license": "UNLICENSED",
   "scripts": {
+<<<<<<< HEAD
     "build": "asb --target debug",
     "build:release": "asb",
+=======
+    "build": "npm run build:contract && npm run build:web",
+>>>>>>> 23546e3ae897db30e88f3b5f454c9bcd3c28ff35
     "build:contract": "node contract/compile.js",
     "build:contract:debug": "node contract/compile.js --debug",
     "build:web": "parcel build src/index.html --public-url ./",
